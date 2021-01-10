@@ -30,6 +30,7 @@ const Main = (listNumber : Array<number>) : Array<number> => {
         let positiveNumb = numb < 0 ? -numb : numb;
 
         //Vòng lặp kiểm tra
+        //Bỏ qua số mũ là 0 và 1
         for (let i = 2; i < positiveNumb; i++){
             if(Check(positiveNumb, i)) {
                 newListNumber.push(numb);
